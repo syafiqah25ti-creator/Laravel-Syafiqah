@@ -36,6 +36,7 @@ class QuestionController extends Controller
         $data['nama']       = $request->nama;
         $data['email']      = $request->email;
         $data['pertanyaan'] = $request->pertanyaan;
+        
 
         return view('home-question-respon', $data);
     }

@@ -176,6 +176,12 @@
                                 </div>
                             @endif
 
+                            @if (session('info'))
+                                <div class="alert alert-info">
+                                    {!! session('info') !!}
+                                </div>
+                            @endif
+
                             <form action="{{ route('question.store') }}" method="POST">
                                 @csrf
                                 <div class="mb-3">
