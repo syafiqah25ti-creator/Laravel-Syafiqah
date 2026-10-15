@@ -6,9 +6,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+    
     public function index()
     {
             /* Cara 2 */
@@ -33,7 +31,7 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
     }
 
     /**
@@ -68,3 +66,4 @@ class HomeController extends Controller
         //
     }
 }
+
